@@ -1,15 +1,9 @@
 lexer grammar Treino;
 
-/*
-    Declaração das regras léxicas
-*/
-
 // Regra léxica para iniciar a lista de treino
 TREINO: 'treino';
 
 // Regra léxica para iniciar a categoria dos items da lista de treino
-
-treino
 PEITO: 'peito';
 TRICEPS: 'triceps';
 COSTAS: 'costas';
@@ -32,8 +26,8 @@ COMENTARIO : '{' ~('\n'|'\r'|'}')* '}' {skip();};
 WS : ( ' ' | '\t' | '\r' | '\n') {skip();};
 
 // Regras léxicas para pontuações
-VIRGULA: ',';
-DOISPONTOS: ':';
+// VIRGULA: ',';
+// DOISPONTOS: ':';
 
 // Regra léxica para verificação de erros
 ERRO: .;
@@ -42,7 +36,8 @@ ERRO: .;
     Declaração das regras sintáticas
 */
 
-/*lista_treino: 'treino' lista_peito lista_triceps lista_costas lista_biceps lista_pernas lista_ombros <EOF>;
+/*
+lista_treino: 'treino' lista_peito lista_triceps lista_costas lista_biceps lista_pernas lista_ombros <EOF>;
 lista_peito: 'peito' exercicio+;
 lista_triceps: 'açougue' exercicio+;
 lista_costas: 'costas' exercicio+;

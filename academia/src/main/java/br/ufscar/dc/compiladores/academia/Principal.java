@@ -20,20 +20,9 @@ public class Principal {
                 while ((t = lex.nextToken()).getType() != Token.EOF) {
                     String nomeToken = Treino.VOCABULARY.getDisplayName(t.getType());
                     System.out.print("<" + Treino.VOCABULARY.getDisplayName(t.getType())+","+ t.getText()+">");
-                    
-                    // ERRO comentário não fechado
-                    if(nomeToken.equals("COMENTARIO_NAO_FECHADO")) {
-                        pw.println("Linha "+t.getLine()+": comentario nao fechado");
-                        break;
-                    }
-                    
-                    // ERRO cadeia não fechada
-                    else if(nomeToken.equals("CADEIA_NAO_FECHADA")) {
-                        pw.println("Linha "+t.getLine()+": cadeia literal nao fechada");
-                        break;
-                    }
+
                     // ERRO - simbolo não identificado 
-                    else if(nomeToken.equals("ERRO")) {
+                    if(nomeToken.equals("ERRO")) {
                         pw.println("Linha "+t.getLine()+": "+t.getText()+" - simbolo nao identificado");
                         break;
                     }
