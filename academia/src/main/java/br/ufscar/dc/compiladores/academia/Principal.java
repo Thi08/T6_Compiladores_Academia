@@ -19,7 +19,6 @@ public class Principal {
                 Token t = null;
                 while ((t = lex.nextToken()).getType() != Token.EOF) {
                     String nomeToken = Treino.VOCABULARY.getDisplayName(t.getType());
-                    System.out.print("<" + Treino.VOCABULARY.getDisplayName(t.getType())+","+ t.getText()+">");
 
                     // ERRO - simbolo não identificado 
                     if(nomeToken.equals("ERRO")) {
