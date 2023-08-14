@@ -1,0 +1,12 @@
+<'treino','treino'>
+<'peito','peito'>
+<'supino',CADEIA>
+<',',','>
+<'4',NUM_INT>
+<'-','-'>
+<'12',NUM_INT>
+<'crucifixo',CADEIA>
+<',',','>
+<'4',NUM_INT>
+<'-','-'>
+<'12',NUM_INT>
