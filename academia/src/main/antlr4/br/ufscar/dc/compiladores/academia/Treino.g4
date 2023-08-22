@@ -1,4 +1,4 @@
-lexer grammar Treino;
+grammar Treino;
 
 // Regra léxica para iniciar a lista de treino
 TREINO: 'treino';
@@ -23,9 +23,9 @@ NUM_INT	: ('0'..'9')+;
 // Regra léxica para iniciar o nome de cada exercicio
 CADEIA : ('a'..'z'|'A'..'Z') ('a'..'z'|'A'..'Z' | ' ')*;
 
-fragment
 ESC_SEQ	: '\\\'';
 COMENTARIO : '{' ~('\n'|'\r'|'}')* '}' {skip();};
+COMENTARIO_NAO_FECHADO: '{' ~('\n'|'}')*? '\n';
 WS : ( ' ' | '\t' | '\r' | '\n') {skip();};
 
 // Regras léxicas para pontuações
@@ -35,20 +35,20 @@ VIRGULA: ',';
 // Regra léxica para verificação de erros
 ERRO: .;
 
+
 /*
     Declaração das regras sintáticas
 */
 
-/*
 lista_treino: 'treino' lista_peito lista_triceps lista_costas lista_biceps lista_pernas lista_ombros <EOF>;
 lista_peito: 'peito' exercicio+;
-lista_triceps: 'açougue' exercicio+;
+lista_triceps: 'triceps' exercicio+;
 lista_costas: 'costas' exercicio+;
 lista_biceps: 'biceps' exercicio+;
 lista_pernas: 'pernas' exercicio+;
 lista_ombros: 'ombros' exercicio+;
 
-exercio: nome ',' valor;
+exercicio: nome ',' series '-' repeticoes;
 nome: CADEIA;
-quantidade: NUM_INT;
-*/
+series: NUM_INT;
+repeticoes: NUM_INT;
