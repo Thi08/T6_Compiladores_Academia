@@ -130,6 +130,11 @@ public class TreinoParser extends Parser {
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof TreinoListener ) ((TreinoListener)listener).exitLista_treino(this);
 		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof TreinoVisitor ) return ((TreinoVisitor<? extends T>)visitor).visitLista_treino(this);
+			else return visitor.visitChildren(this);
+		}
 	}
 
 	public final Lista_treinoContext lista_treino() throws RecognitionException {
@@ -185,6 +190,11 @@ public class TreinoParser extends Parser {
 		@Override
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof TreinoListener ) ((TreinoListener)listener).exitLista_peito(this);
+		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof TreinoVisitor ) return ((TreinoVisitor<? extends T>)visitor).visitLista_peito(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -245,6 +255,11 @@ public class TreinoParser extends Parser {
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof TreinoListener ) ((TreinoListener)listener).exitLista_triceps(this);
 		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof TreinoVisitor ) return ((TreinoVisitor<? extends T>)visitor).visitLista_triceps(this);
+			else return visitor.visitChildren(this);
+		}
 	}
 
 	public final Lista_tricepsContext lista_triceps() throws RecognitionException {
@@ -303,6 +318,11 @@ public class TreinoParser extends Parser {
 		@Override
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof TreinoListener ) ((TreinoListener)listener).exitLista_costas(this);
+		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof TreinoVisitor ) return ((TreinoVisitor<? extends T>)visitor).visitLista_costas(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -363,6 +383,11 @@ public class TreinoParser extends Parser {
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof TreinoListener ) ((TreinoListener)listener).exitLista_biceps(this);
 		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof TreinoVisitor ) return ((TreinoVisitor<? extends T>)visitor).visitLista_biceps(this);
+			else return visitor.visitChildren(this);
+		}
 	}
 
 	public final Lista_bicepsContext lista_biceps() throws RecognitionException {
@@ -422,6 +447,11 @@ public class TreinoParser extends Parser {
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof TreinoListener ) ((TreinoListener)listener).exitLista_pernas(this);
 		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof TreinoVisitor ) return ((TreinoVisitor<? extends T>)visitor).visitLista_pernas(this);
+			else return visitor.visitChildren(this);
+		}
 	}
 
 	public final Lista_pernasContext lista_pernas() throws RecognitionException {
@@ -480,6 +510,11 @@ public class TreinoParser extends Parser {
 		@Override
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof TreinoListener ) ((TreinoListener)listener).exitLista_ombros(this);
+		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof TreinoVisitor ) return ((TreinoVisitor<? extends T>)visitor).visitLista_ombros(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -544,6 +579,11 @@ public class TreinoParser extends Parser {
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof TreinoListener ) ((TreinoListener)listener).exitExercicio(this);
 		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof TreinoVisitor ) return ((TreinoVisitor<? extends T>)visitor).visitExercicio(this);
+			else return visitor.visitChildren(this);
+		}
 	}
 
 	public final ExercicioContext exercicio() throws RecognitionException {
@@ -590,6 +630,11 @@ public class TreinoParser extends Parser {
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof TreinoListener ) ((TreinoListener)listener).exitNome(this);
 		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof TreinoVisitor ) return ((TreinoVisitor<? extends T>)visitor).visitNome(this);
+			else return visitor.visitChildren(this);
+		}
 	}
 
 	public final NomeContext nome() throws RecognitionException {
@@ -628,6 +673,11 @@ public class TreinoParser extends Parser {
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof TreinoListener ) ((TreinoListener)listener).exitSeries(this);
 		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof TreinoVisitor ) return ((TreinoVisitor<? extends T>)visitor).visitSeries(this);
+			else return visitor.visitChildren(this);
+		}
 	}
 
 	public final SeriesContext series() throws RecognitionException {
@@ -665,6 +715,11 @@ public class TreinoParser extends Parser {
 		@Override
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof TreinoListener ) ((TreinoListener)listener).exitRepeticoes(this);
+		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof TreinoVisitor ) return ((TreinoVisitor<? extends T>)visitor).visitRepeticoes(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 

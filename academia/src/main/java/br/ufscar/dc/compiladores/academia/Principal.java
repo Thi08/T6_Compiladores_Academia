@@ -7,6 +7,7 @@ import org.antlr.v4.runtime.Token;
 import org.antlr.v4.runtime.CommonTokenStream;
 import org.antlr.v4.runtime.CharStream;
 import org.antlr.v4.runtime.CharStreams;
+import br.ufscar.dc.compiladores.academia.TreinoParser.Lista_treinoContext;
 
 public class Principal {
     public static void main(String args[]) throws IOException {
@@ -73,7 +74,33 @@ public class Principal {
             parser.lista_treino();
         }
         
-        pw.println("Fim da compilacao");
+        // Depurar semântico
+        
+        // Realizar a análise semântica
+        cs = CharStreams.fromFileName(args[0]);
+        lex = new TreinoLexer(cs);
+        CommonTokenStream tokens = new CommonTokenStream(lex);
+        TreinoParser parser = new TreinoParser(tokens);
+
+        parser.removeErrorListeners();
+
+        // Obtendo a árvore sintática
+        Lista_treinoContext arvore = parser.lista_treino();
+        TreinoSemantico as = new TreinoSemantico();
+
+        // Realiza a visita semântica
+        as.visitLista_treino(arvore);
+
+        // Verificar se há erros semânticos
+        if(!TreinoSemanticoUtils.errosSemanticos.isEmpty()){
+
+            // Imprimir os erros semânticos no arquivo
+            for(String s: TreinoSemanticoUtils.errosSemanticos){
+                pw.write(s);
+            }
+            pw.write("Fim da compilacao\n");
+        }
+        
         pw.close();
     }
 }
