@@ -12,7 +12,7 @@ import br.ufscar.dc.compiladores.academia.TreinoParser.Lista_treinoContext;
 public class Principal {
     public static void main(String args[]) throws IOException {
 
-        PrintWriter pw = null;
+        final PrintWriter pw = null;
 
         // Altera a saída do programa de acordo com a quantidade de argumentos
         if (args.length == 1) {
@@ -92,6 +92,13 @@ public class Principal {
         as.visitLista_treino(arvore);
 
         // Verificar se há erros semânticos
+        for(String s: TreinoSemanticoUtils.errosSemanticos){
+                pw.write(s);
+            }
+
+        //TreinoSemanticoUtils.errosSemanticos.forEach((s) -> pw.write(s));
+
+        /*
         if(!TreinoSemanticoUtils.errosSemanticos.isEmpty()){
 
             // Imprimir os erros semânticos no arquivo
@@ -99,8 +106,9 @@ public class Principal {
                 pw.write(s);
             }
             pw.write("Fim da compilacao\n");
-        }
+        }*/
         
+        pw.write("Fim da compilacao\n");
         pw.close();
     }
 }

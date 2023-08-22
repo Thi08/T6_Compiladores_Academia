@@ -45,7 +45,7 @@ public class MyCustomErrorListener implements ANTLRErrorListener {
                 Text = "EOF";
             }
 
-            pw.println("Linha "+line+": erro sintatico proximo a "+ t.getText());
+            pw.println("Linha "+line+": Erro sintatico proximo a "+ t.getText());
             sintError = true;
         }
     }

@@ -5,12 +5,10 @@ br/ufscar/dc/compiladores/academia/MyCustomErrorListener.class
 br/ufscar/dc/compiladores/academia/TreinoVisitor.class
 br/ufscar/dc/compiladores/academia/TabelaDeSimbolos.class
 br/ufscar/dc/compiladores/academia/TreinoParser$Lista_bicepsContext.class
-br/ufscar/dc/compiladores/academia/Principal.class
 br/ufscar/dc/compiladores/academia/TreinoParser$RepeticoesContext.class
 br/ufscar/dc/compiladores/academia/Escopos.class
 br/ufscar/dc/compiladores/academia/TreinoParser$ExercicioContext.class
 br/ufscar/dc/compiladores/academia/TreinoParser$NomeContext.class
-br/ufscar/dc/compiladores/academia/TreinoSemantico.class
 br/ufscar/dc/compiladores/academia/TreinoParser$SeriesContext.class
 br/ufscar/dc/compiladores/academia/TreinoParser$Lista_peitoContext.class
 br/ufscar/dc/compiladores/academia/TreinoParser.class
@@ -21,4 +19,3 @@ br/ufscar/dc/compiladores/academia/TreinoLexer.class
 br/ufscar/dc/compiladores/academia/TreinoParser$Lista_treinoContext.class
 br/ufscar/dc/compiladores/academia/TreinoParser$Lista_tricepsContext.class
 br/ufscar/dc/compiladores/academia/TreinoParser$Lista_costasContext.class
-br/ufscar/dc/compiladores/academia/TreinoSemanticoUtils.class
