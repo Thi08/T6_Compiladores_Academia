@@ -1,0 +1,11 @@
+treino
+    peito:
+        supino, 4 - 12
+        crucifixo, 4 - 12
+        inclinado, 4 - 12
+    triceps
+        corda, 3 - 15
+        testa, 3 - 15
+    ombro
+        lateral, 3 - 15
+        desenvolvimento, 3 - 15

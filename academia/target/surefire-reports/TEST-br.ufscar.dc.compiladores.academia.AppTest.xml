@@ -14,7 +14,7 @@
     <property name="os.name" value="Linux"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-11-openjdk-amd64/lib"/>
-    <property name="sun.java.command" value="/home/blp/T6_Compiladores_Academia/academia/target/surefire/surefirebooter538990832804099934.jar /home/blp/T6_Compiladores_Academia/academia/target/surefire 2023-08-28T23-09-18_036-jvmRun1 surefire12068716638896916842tmp surefire_07538925341230640982tmp"/>
+    <property name="sun.java.command" value="/home/blp/T6_Compiladores_Academia/academia/target/surefire/surefirebooter9886208822974106426.jar /home/blp/T6_Compiladores_Academia/academia/target/surefire 2023-08-29T08-36-13_243-jvmRun1 surefire13799224998361588002tmp surefire_06946089978567117298tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/home/blp/T6_Compiladores_Academia/academia/target/test-classes:/home/blp/T6_Compiladores_Academia/academia/target/classes:/home/blp/.m2/repository/com/itextpdf/itextpdf/5.5.6/itextpdf-5.5.6.jar:/home/blp/.m2/repository/junit/junit/4.11/junit-4.11.jar:/home/blp/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/home/blp/.m2/repository/org/antlr/antlr4/4.11.1/antlr4-4.11.1-complete.jar:/home/blp/.m2/repository/org/antlr/antlr4-runtime/4.11.1/antlr4-runtime-4.11.1.jar:/home/blp/.m2/repository/org/antlr/antlr-runtime/3.5.3/antlr-runtime-3.5.3.jar:/home/blp/.m2/repository/org/antlr/ST4/4.3.4/ST4-4.3.4.jar:/home/blp/.m2/repository/org/abego/treelayout/org.abego.treelayout.core/1.0.3/org.abego.treelayout.core-1.0.3.jar:/home/blp/.m2/repository/org/glassfish/javax.json/1.1.4/javax.json-1.1.4.jar:/home/blp/.m2/repository/com/ibm/icu/icu4j/71.1/icu4j-71.1.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -30,7 +30,7 @@
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="/home/blp/T6_Compiladores_Academia/academia/target/surefire/surefirebooter538990832804099934.jar"/>
+    <property name="surefire.real.class.path" value="/home/blp/T6_Compiladores_Academia/academia/target/surefire/surefirebooter9886208822974106426.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="11.0.19+7-post-Ubuntu-0ubuntu120.04.1"/>
     <property name="user.name" value="blp"/>
@@ -55,5 +55,5 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="55.0"/>
   </properties>
-  <testcase name="shouldAnswerWithTrue" classname="br.ufscar.dc.compiladores.academia.AppTest" time="0.001"/>
+  <testcase name="shouldAnswerWithTrue" classname="br.ufscar.dc.compiladores.academia.AppTest" time="0.002"/>
 </testsuite>

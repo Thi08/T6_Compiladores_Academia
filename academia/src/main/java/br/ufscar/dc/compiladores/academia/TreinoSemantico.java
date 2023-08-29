@@ -26,11 +26,11 @@ public class TreinoSemantico extends TreinoBaseVisitor<Void> {
     }
     
     /*
-        Verifica se valor é do tipo inteiro ou real
+        Verifica se os valores são do tipo inteiro
     */
     @Override
     public Void visitExercicio(TreinoParser.ExercicioContext ctx) {
-        if(ctx.series().NUM_INT() == null && ctx.repeticoes().NUM_INT() == null){
+        if(ctx.series().NUM_INT() == null || ctx.repeticoes().NUM_INT() == null){
             String mensagem = String.format("O número de series/repetições está errado\n");
             TreinoSemanticoUtils.adicionarErroSemantico(ctx.start, mensagem);
         }

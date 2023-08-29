@@ -1,0 +1,13 @@
+treino
+    peito,
+        supino, 4 - 12
+    triceps
+        corda, 4 - 12
+    costas
+        remada, 3 - 12
+    biceps
+        rosca, 3 - 12
+    pernas
+        leg, 5 - 15
+    ombros
+        lateral, 3 - 12
