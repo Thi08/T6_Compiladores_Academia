@@ -5,11 +5,18 @@ treino
         crucifixo, 4 - 12
     triceps
         corda, 4 - 12
+        testa, 4 - 12
     costas
-        remada, 3 - 12
+        remada baixa, 4 - 12
+        puxador, 4 - 12
     biceps
-        rosca, 3 - 12
+        rosca alternada, 3 - 15
+        rosca martelo, 3 - 15
     pernas
-        leg, 5 - 15
+        leg press, 4 - 15
+        agachamento, 4 - 15
+        extensora, 4 - 15
+        abdutora, 4 - 15
     ombros
-        lateral, 3 - 12
+        elevacao lateral, 3 - 15
+        remada alta, 3 - 15

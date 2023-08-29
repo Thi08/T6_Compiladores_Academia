@@ -19,21 +19,10 @@ public class TreinoSemantico extends TreinoBaseVisitor<Void> {
         if(!escopoAtual.existe(ctx.getText())){
             escopoAtual.inserir(ctx.getText());
         } else {
-            String mensagem = String.format("Exercicio %s já existe na lista de treino\n", ctx.getText());
+            String mensagem = String.format("Exercicio %s ja existe na lista de treino\n", ctx.getText());
             TreinoSemanticoUtils.adicionarErroSemantico(ctx.start, mensagem);
         }
         return null;
     }
-    
-    /*
-        Verifica se os valores são do tipo inteiro
-    */
-    @Override
-    public Void visitExercicio(TreinoParser.ExercicioContext ctx) {
-        if(ctx.series().NUM_INT() == null || ctx.repeticoes().NUM_INT() == null){
-            String mensagem = String.format("O número de series/repetições está errado\n");
-            TreinoSemanticoUtils.adicionarErroSemantico(ctx.start, mensagem);
-        }
-        return super.visitExercicio(ctx);
-    }
+
 }

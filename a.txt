@@ -1,8 +1,8 @@
 treino
     peito
-        supino inclinado, 4 - 12
+        supino, 4 - 12
         crucifixo, 4 - 12
-        fly, 3 - 15
+        fly, 4 - 12
     triceps
         corda, 4 - 12
         testa, 4 - 12
