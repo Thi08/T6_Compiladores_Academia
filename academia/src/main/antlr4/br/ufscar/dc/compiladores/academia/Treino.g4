@@ -14,8 +14,6 @@ BICEPS: 'biceps';
 PERNAS: 'pernas';
 OMBROS: 'ombros';
 
-// TOTAL: 'total';
-
 
 // Regra léxicas para iniciar números inteiros e reais utilizado para indicar a quantidade de series e repetiçoes
 NUM_INT	: ('0'..'9')+;
@@ -25,12 +23,10 @@ CADEIA : ('a'..'z'|'A'..'Z') ('a'..'z'|'A'..'Z' | ' ')*;
 
 ESC_SEQ	: '\\\'';
 COMENTARIO : '{' ~('\n'|'\r'|'}')* '}' {skip();};
-COMENTARIO_NAO_FECHADO: '{' ~('\n'|'}')*? '\n';
 WS : ( ' ' | '\t' | '\r' | '\n') {skip();};
 
 // Regras léxicas para pontuações
 VIRGULA: ',';
-// DOISPONTOS: ':';
 
 // Regra léxica para verificação de erros
 ERRO: .;
