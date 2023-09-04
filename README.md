@@ -14,7 +14,7 @@ A linguagem Treino auxilia na montagem da lista de exercicios para treinar, sepa
 
 **Como utilizar**
 
-Para utilizar a linguagem Treino temos que iniciar a nossa lista utilizando a palavra-chave treino. Logo após, temos que adicionar todos os grupos musculares, na seguinte ordem: peito, triceps, costas, biceps, pernas, ombros, onde cada grupo tem os respectivos nomes dos exercicios, seguidos da quantidade de series e repetições, no seguinte modelo: "exercicio", "Nº Séries" - "Nº Repetições".
+Para utilizar a linguagem Treino temos que iniciar a nossa lista utilizando a palavra-chave treino. Logo após, temos que adicionar todos os grupos musculares, na seguinte ordem: peito, triceps, costas, biceps, pernas, ombros, onde cada grupo tem os seus respectivos nomes dos exercicios, seguidos da quantidade de series e repetições, no seguinte modelo: "exercicio", "Nº Séries" - "Nº Repetições" (Adicione quantos exercicios quiser).
 
 **Exemplo Simples:**
 ```
